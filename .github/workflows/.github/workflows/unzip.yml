@@ -1,0 +1,17 @@
+name: Unzip Site Files
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Unzip site files
+        run: unzip -o 'skytrust-portal.zip' -d .
