@@ -14,7 +14,7 @@ jobs:
 
       - name: Unzip uploaded file
         run: |
-          unzip -o '*.zip' -d .
+          unzip -o 'skytrust-portal-extracted.zip' -d .
 
       - name: Commit unzipped files
         run: |
